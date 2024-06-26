@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3557E82C299761003F43AA /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3557E72C299761003F43AA /* FileCache.swift */; };
+		3C5465B42C28A2DB00D7455D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5465B32C28A2DB00D7455D /* TodoItem.swift */; };
+		3C5465B72C28A54100D7455D /* TodoItem+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */; };
 		3CBF695B2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */; };
 		3CBF695D2C23170F00CF97EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF695C2C23170F00CF97EF /* ContentView.swift */; };
 		3CBF695F2C23171000CF97EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF695E2C23171000CF97EF /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C3557E72C299761003F43AA /* FileCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
+		3C5465B32C28A2DB00D7455D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoItem+JSON.swift"; sourceTree = "<group>"; };
 		3CBF69572C23170F00CF97EF /* ToDoListOfYandex_SMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListOfYandex_SMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListOfYandex_SMDApp.swift; sourceTree = "<group>"; };
 		3CBF695C2C23170F00CF97EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C3557E62C2996E7003F43AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C3557E72C299761003F43AA /* FileCache.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3C5465B22C28A15900D7455D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C5465B32C28A2DB00D7455D /* TodoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C5465B52C28A51800D7455D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C9A58782C2B15F800FA2072 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF695C2C23170F00CF97EF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3CBF694E2C23170F00CF97EF = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +132,11 @@
 		3CBF69592C23170F00CF97EF /* ToDoListOfYandex_SMD */ = {
 			isa = PBXGroup;
 			children = (
+				3C9A58782C2B15F800FA2072 /* View */,
+				3C5465B22C28A15900D7455D /* Model */,
+				3C5465B52C28A51800D7455D /* Extensions */,
+				3C3557E62C2996E7003F43AA /* Service */,
 				3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */,
-				3CBF695C2C23170F00CF97EF /* ContentView.swift */,
 				3CBF695E2C23171000CF97EF /* Assets.xcassets */,
 				3CBF69602C23171000CF97EF /* Preview Content */,
 			);
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5465B72C28A54100D7455D /* TodoItem+JSON.swift in Sources */,
 				3CBF695D2C23170F00CF97EF /* ContentView.swift in Sources */,
+				3C5465B42C28A2DB00D7455D /* TodoItem.swift in Sources */,
+				3C3557E82C299761003F43AA /* FileCache.swift in Sources */,
 				3CBF695B2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
