@@ -10,14 +10,16 @@
 		3C3557E82C299761003F43AA /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3557E72C299761003F43AA /* FileCache.swift */; };
 		3C5465B42C28A2DB00D7455D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5465B32C28A2DB00D7455D /* TodoItem.swift */; };
 		3C5465B72C28A54100D7455D /* TodoItem+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */; };
-		3C76EA582C2CAD0500E67D8B /*  AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C76EA572C2CAD0500E67D8B /*  AddView.swift */; };
+		3C76EA582C2CAD0500E67D8B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C76EA572C2CAD0500E67D8B /* AddView.swift */; };
+		3C8C25862C34B633008A4AE8 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C25852C34B633008A4AE8 /* Date.swift */; };
 		3CBF695B2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */; };
-		3CBF695D2C23170F00CF97EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF695C2C23170F00CF97EF /* ContentView.swift */; };
+		3CBF695D2C23170F00CF97EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF695C2C23170F00CF97EF /* MainView.swift */; };
 		3CBF695F2C23171000CF97EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF695E2C23171000CF97EF /* Assets.xcassets */; };
 		3CBF69622C23171000CF97EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBF69612C23171000CF97EF /* Preview Assets.xcassets */; };
 		3CBF696C2C23171000CF97EF /* ToDoListOfYandex_SMDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF696B2C23171000CF97EF /* ToDoListOfYandex_SMDTests.swift */; };
 		3CBF69762C23171000CF97EF /* ToDoListOfYandex_SMDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF69752C23171000CF97EF /* ToDoListOfYandex_SMDUITests.swift */; };
 		3CBF69782C23171000CF97EF /* ToDoListOfYandex_SMDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF69772C23171000CF97EF /* ToDoListOfYandex_SMDUITestsLaunchTests.swift */; };
+		3CDAB7AE2C32433600FD237E /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAB7AD2C32433600FD237E /* CustomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +43,11 @@
 		3C3557E72C299761003F43AA /* FileCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
 		3C5465B32C28A2DB00D7455D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoItem+JSON.swift"; sourceTree = "<group>"; };
-		3C76EA572C2CAD0500E67D8B /*  AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AddView.swift"; sourceTree = "<group>"; };
+		3C76EA572C2CAD0500E67D8B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3C8C25852C34B633008A4AE8 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		3CBF69572C23170F00CF97EF /* ToDoListOfYandex_SMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListOfYandex_SMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListOfYandex_SMDApp.swift; sourceTree = "<group>"; };
-		3CBF695C2C23170F00CF97EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CBF695C2C23170F00CF97EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3CBF695E2C23171000CF97EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CBF69612C23171000CF97EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CBF69672C23171000CF97EF /* ToDoListOfYandex_SMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListOfYandex_SMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +55,7 @@
 		3CBF69712C23171000CF97EF /* ToDoListOfYandex_SMDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListOfYandex_SMDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBF69752C23171000CF97EF /* ToDoListOfYandex_SMDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListOfYandex_SMDUITests.swift; sourceTree = "<group>"; };
 		3CBF69772C23171000CF97EF /* ToDoListOfYandex_SMDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListOfYandex_SMDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CDAB7AD2C32433600FD237E /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,26 +83,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C3557E62C2996E7003F43AA /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				3C3557E72C299761003F43AA /* FileCache.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		3C5465B22C28A15900D7455D /* Model */ = {
+		3C5465B22C28A15900D7455D /* Struct */ = {
 			isa = PBXGroup;
 			children = (
 				3C5465B32C28A2DB00D7455D /* TodoItem.swift */,
+				3C3557E72C299761003F43AA /* FileCache.swift */,
 			);
-			path = Model;
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		3C5465B52C28A51800D7455D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3CDAB7AD2C32433600FD237E /* CustomColor.swift */,
 				3C5465B62C28A54100D7455D /* TodoItem+JSON.swift */,
+				3C8C25852C34B633008A4AE8 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -106,8 +105,8 @@
 		3C9A58782C2B15F800FA2072 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3CBF695C2C23170F00CF97EF /* ContentView.swift */,
-				3C76EA572C2CAD0500E67D8B /*  AddView.swift */,
+				3CBF695C2C23170F00CF97EF /* MainView.swift */,
+				3C76EA572C2CAD0500E67D8B /* AddView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,11 +134,10 @@
 		3CBF69592C23170F00CF97EF /* ToDoListOfYandex_SMD */ = {
 			isa = PBXGroup;
 			children = (
+				3CD9DC7D2C387E1B009FA6A6 /* App */,
 				3C9A58782C2B15F800FA2072 /* View */,
-				3C5465B22C28A15900D7455D /* Model */,
+				3C5465B22C28A15900D7455D /* Struct */,
 				3C5465B52C28A51800D7455D /* Extensions */,
-				3C3557E62C2996E7003F43AA /* Service */,
-				3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */,
 				3CBF695E2C23171000CF97EF /* Assets.xcassets */,
 				3CBF69602C23171000CF97EF /* Preview Content */,
 			);
@@ -169,6 +167,14 @@
 				3CBF69772C23171000CF97EF /* ToDoListOfYandex_SMDUITestsLaunchTests.swift */,
 			);
 			path = ToDoListOfYandex_SMDUITests;
+			sourceTree = "<group>";
+		};
+		3CD9DC7D2C387E1B009FA6A6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3CBF695A2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,8 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5465B72C28A54100D7455D /* TodoItem+JSON.swift in Sources */,
-				3C76EA582C2CAD0500E67D8B /*  AddView.swift in Sources */,
-				3CBF695D2C23170F00CF97EF /* ContentView.swift in Sources */,
+				3CDAB7AE2C32433600FD237E /* CustomColor.swift in Sources */,
+				3C76EA582C2CAD0500E67D8B /* AddView.swift in Sources */,
+				3C8C25862C34B633008A4AE8 /* Date.swift in Sources */,
+				3CBF695D2C23170F00CF97EF /* MainView.swift in Sources */,
 				3C5465B42C28A2DB00D7455D /* TodoItem.swift in Sources */,
 				3C3557E82C299761003F43AA /* FileCache.swift in Sources */,
 				3CBF695B2C23170F00CF97EF /* ToDoListOfYandex_SMDApp.swift in Sources */,

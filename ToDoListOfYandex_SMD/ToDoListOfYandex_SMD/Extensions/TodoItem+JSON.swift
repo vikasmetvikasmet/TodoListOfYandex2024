@@ -45,7 +45,7 @@ extension TodoItem{
             return nil
         }
         let priorityString = todoItem["priority"] as? String ?? Priority.normal.rawValue
-        guard let priority = Priority(rawValue: priorityString) else {return nil}
+        guard Priority(rawValue: priorityString) != nil else {return nil}
         
         let deadline: Date?
         
