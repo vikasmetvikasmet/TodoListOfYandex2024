@@ -18,6 +18,7 @@ struct MainView: View {
     @State private var showingPlusDo = false
     @State private var showIsDone = false
     
+    
     var body: some View {
         NavigationStack{
             //MARK: Заголовоки
@@ -154,6 +155,8 @@ struct MainView: View {
                 
             }
             .navigationBarTitle("Мои дела \u{1F9B9}")
+            
+            
             
             
             //MARK: Кнопка Плюс

@@ -19,6 +19,7 @@ struct TodoItem: Identifiable{
     let changedAt: Date?
     let priority: Priority
     let color: Color
+   
     
     enum Priority: String{
         case low = "\u{2193}"
@@ -37,6 +38,7 @@ struct TodoItem: Identifiable{
         changedAt: Date? = nil,
         priority: Priority = .normal,
         color: Color = .white
+    
     ) {
         self.id = id
         self.text = text
@@ -46,6 +48,7 @@ struct TodoItem: Identifiable{
         self.changedAt = changedAt
         self.priority = priority
         self.color = color
+        
     }
 
 }
