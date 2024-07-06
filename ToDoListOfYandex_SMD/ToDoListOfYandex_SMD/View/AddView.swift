@@ -7,7 +7,6 @@
 import SwiftUI
 
 
-
 struct AddView: View {
     @Environment(\.presentationMode)
     var presentationMode
@@ -21,6 +20,7 @@ struct AddView: View {
     @State var selectedColor = Color(red: 1, green: 1, blue: 1)
     @State private var sharingToggle = false
     @State private var showCalander = false
+   
     
     var body: some View {
         NavigationView{
@@ -84,63 +84,63 @@ struct AddView: View {
                     }
                 }
                 
-                //MARK: Выбор цвета
-                HStack{
-                    VStack(alignment: .leading){
-                        Text("Цвет")
-                        Text(selectedColor.toHex)
-                    }
-                    ColorPicker("", selection: $selectedColor)
-                }
-                 
+               // MARK: Выбор цвета
+                                HStack{
+                                    VStack(alignment: .leading){
+                                        Text("Цвет")
+                                        Text(selectedColor.toHex)
+                                    }
+                                    ColorPicker("", selection: $selectedColor)
+                               }
                 
-                //MARK: Удалить дело
-                Section {
-                    HStack {
-                        Spacer()
-                        Button("Удалить") {
-                            presentationMode.wrappedValue.dismiss()
+                
+                    //MARK: Удалить дело
+                    Section {
+                        HStack {
+                            Spacer()
+                            Button("Удалить") {
+                                presentationMode.wrappedValue.dismiss()
+                            }
+                            .foregroundStyle(Color.red)
+                            .font(.system(size: 20))
+                            .padding(10)
+                            Spacer()
                         }
-                        .foregroundStyle(Color.red)
-                        .font(.system(size: 20))
-                        .padding(10)
-                        Spacer()
                     }
-                }
+                    
+                    
+                    //MARK: Заголвок
+                }.navigationBarTitle("Дело века", displayMode: .inline)
                 
                 
-            //MARK: Заголвок
-            }.navigationBarTitle("Дело века", displayMode: .inline)
-            
-            
-            //MARK: Кнопки перехода в заголовке
-                .navigationBarItems(trailing: Button("Сохранить"){
-                    if self.text != "" {
-                        
-                        let item = TodoItem(text: self.text, deadline: self.deadline, createdAt: self.createdAt, priority: self.priority, color: self.selectedColor)
-                        
-                        self.domany.add(item)
+                //MARK: Кнопки перехода в заголовке
+                    .navigationBarItems(trailing: Button("Сохранить"){
+                        if self.text != "" {
+                            
+                            let item = TodoItem(text: self.text, deadline: self.deadline, createdAt: self.createdAt, priority: self.priority, color: self.selectedColor)
+                            
+                            self.domany.add(item)
+                            self.presentationMode.wrappedValue.dismiss()
+                            
+                        }
+                    }
+                        .foregroundColor(self.text.isEmpty ? .gray : .blue)
+                    )
+                    .navigationBarItems(leading: Button("Отменить"){
                         self.presentationMode.wrappedValue.dismiss()
                         
-                    }
-                }
-                    .foregroundColor(self.text.isEmpty ? .gray : .blue)
-                )
-                .navigationBarItems(leading: Button("Отменить"){
-                    self.presentationMode.wrappedValue.dismiss()
-                    
-                })
+                    })
+            }
+            
         }
-        
     }
-}
-
-#Preview {
-    AddView(domany: FileCatche())
-}
-
-
-
-
-
-
+    
+    #Preview {
+        AddView(domany: FileCatche())
+    }
+    
+    
+    
+    
+    
+    
